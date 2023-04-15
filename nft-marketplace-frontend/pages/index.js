@@ -15,9 +15,9 @@ import {
   AudioLive,
   FollowerTab,
   Slider,
-  Brand,
-  Video,
-  Loader,
+  //Brand,
+  //Video,
+  //Loader,
 } from "../components/componentsindex";
 import { getTopCreators } from "../TopCreators/TopCreators";
 
@@ -62,11 +62,11 @@ const Home = () => {
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <AudioLive />
-      {creators.length == 0 ? (
+      {/* {creators.length == 0 ? (
         <Loader />
       ) : (
         <FollowerTab TopCreator={creators} />
-      )}
+      )} */}
 
       <Slider />
       <Collection />
@@ -75,7 +75,7 @@ const Home = () => {
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <Filter />
-      {nfts.length == 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
+      {/* {nfts.length == 0 ? <Loader /> : <NFTCard NFTData={nfts} />} */}
 
       <Title
         heading="Browse by category"
@@ -83,8 +83,8 @@ const Home = () => {
       />
       <Category />
       <Subscribe />
-      <Brand />
-      <Video />
+      {/* <Brand /> */}
+      {/* <Video /> */}
     </div>
   );
 };

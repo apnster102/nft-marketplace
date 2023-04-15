@@ -1,17 +1,21 @@
-import React, {useState, useEffect} from 'react';
-
-import Style from "./NavBar.module.css";
-
+import React, { useState, useEffect, useContext } from "react";
 import Image from "next/image";
+import  { DiJqueryLogo } from "react-icons/di";
+//----IMPORT ICON
+import { MdNotifications } from "react-icons/md";
+import { BsSearch } from "react-icons/bs";
+import { CgMenuLeft, CgMenuRight } from "react-icons/cg";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-import {MdNotification} from "react-icons/md";
-import {BsSearch} from "react-icons/bs";
-import {CgMenuLeft, CgMenuRight} from "react-icons/cg";
-
-import {Discover, HelpCenter, Notification, Profile, SideBar} from './index';
-import {Button} from "../componentindex";
+//INTERNAL IMPORT
+import Style from "./NavBar.module.css";
+import { Discover, HelpCenter, Notification, Profile, SideBar } from "../NavBar/index";
+import { Button, Error } from "../componentsindex";
 import images from "../../img";
+
+//IMPORT FROM SMART CONTRACT
+import { NFTMarketplaceContext } from "../../Context/NFTMarketplaceContext";
 
 const NavBar = () => {
   //----USESTATE COMPONNTS
@@ -77,7 +81,7 @@ const NavBar = () => {
   const { currentAccount, connectWallet, openError } = useContext(
     NFTMarketplaceContext
   );
-  
+
   return (
     <div className={Style.navbar}>
       <div className={Style.navbar_container}>
