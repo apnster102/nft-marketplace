@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-import Style from "./NarBar.module.css";
+import Style from "./NavBar.module.css";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +13,7 @@ import {Discover, HelpCenter, Notification, Profile, SideBar} from './index';
 import {Button} from "../componentindex";
 import images from "../../img";
 
-const NarBar = () => {
+const NavBar = () => {
   //----USESTATE COMPONNTS
   const [discover, setDiscover] = useState(false);
   const [help, setHelp] = useState(false);
@@ -180,4 +180,4 @@ const NarBar = () => {
   );
 };
 
-export default NarBar;
+export default NavBar;
