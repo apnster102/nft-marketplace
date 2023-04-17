@@ -3,7 +3,7 @@ import Footer from "./Footer/Footer";
 import NavBar from "./Navbar/NavBar";
 import HeroSection from "./HeroSection/HeroSection";
 import Service from "./Service/Service";
-import BigNFTSilder from "./BigNFTSilder/BigNFTSilder";
+import BigNFTSlider from "./BigNFTSlider/BigNFTSlider";
 import Subscribe from "./Subscribe/Subscribe";
 import Title from "./Title/Title";
 import Category from "./Category/Category";
@@ -15,6 +15,7 @@ import LikeProfile from "./LikeProfile/LikeProfile";
 import FollowerTab from "./FollowerTab/FollowerTab";
 import Slider from "./Slider/Slider";
 import Error from "./Error/Error";
+import Brand from "./Brand/Brand";
 
 export {
   Button,
@@ -22,7 +23,7 @@ export {
   NavBar,
   HeroSection,
   Service,
-  BigNFTSilder,
+  BigNFTSlider,
   Subscribe,
   Title,
   Category,
@@ -34,4 +35,5 @@ export {
   FollowerTab,
   Slider,
   Error,
+  Brand,
 };
