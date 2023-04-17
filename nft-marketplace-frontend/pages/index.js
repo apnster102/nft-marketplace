@@ -5,7 +5,7 @@ import Style from "../styles/index.module.css";
 import {
   HeroSection,
   Service,
-  BigNFTSilder,
+  BigNFTSlider,
   Subscribe,
   Title,
   Category,
@@ -15,8 +15,9 @@ import {
   AudioLive,
   FollowerTab,
   Slider,
+  Video,
   Brand,
-  //Video,
+  
   //Loader,
 } from "../components/componentsindex";
 import { getTopCreators } from "../TopCreators/TopCreators";
@@ -56,7 +57,7 @@ const Home = () => {
     <div className={Style.homePage}>
       <HeroSection />
       <Service />
-      <BigNFTSilder />
+      <BigNFTSlider />
       <Title
         heading="Audio Collection"
         paragraph="Discover the most outstanding NFTs in all topics of life."
@@ -83,8 +84,8 @@ const Home = () => {
       />
       <Category />
       <Subscribe />
+      <Video />
       <Brand />
-      {/* <Video /> */}
     </div>
   );
 };

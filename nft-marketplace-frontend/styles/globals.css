@@ -6,7 +6,7 @@
 
 :root{
   --icons-color: #1bc9b5ee;
-  --icons-light-color: #ffdf2b57;
+  --icons-light-color: #0591ad;
   --icons-bg-color: #1bc9b5ee;
   --shadow-dark-color: #000000;
   --bg-shadow-dark-color: #555557;
@@ -14,8 +14,8 @@
   --main-bg-color: #232325;
   --overlay: #2323255e;
 
-  --box-shadow: 1px 1px 2px #1d8e8a,
-  -1px -1px 2px #23b3ae;
+  --box-shadow: 1px 1px 2px #25beba,
+  -1px -1px 2px #25beba;
 
   --box-shadow-2:1px 1px 2px #25beba,
   -1px -1px 2px #25beba;
