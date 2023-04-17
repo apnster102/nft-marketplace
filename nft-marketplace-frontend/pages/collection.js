@@ -24,7 +24,7 @@ const collection = () => {
         <Banner bannerImage={images.creatorbackground1} />
         <collectionProfile />
         <NFTCardTwo NFTData={collectionArray} />
-        <Filter />
+       
         <Slider />
         <Brand />
     </div>
