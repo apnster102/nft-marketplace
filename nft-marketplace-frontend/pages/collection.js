@@ -12,6 +12,7 @@ const collection = () => {
     <div className={Style.collection}>
         <Banner bannerImage={images.creatorbackground1} />
         <collectionProfile />
+        <Filter />
     </div>
   );
 };
