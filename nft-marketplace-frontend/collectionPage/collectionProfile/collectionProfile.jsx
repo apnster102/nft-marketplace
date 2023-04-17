@@ -56,7 +56,8 @@ const collectionProfile = () => {
                                 className={Style.collectionProfile_box_middle_box_item}
                                 key={i+1}
                             >
-                                <small>${i+1}92,256</small>
+                                <small>Floor price</small>
+                                <p>${i+1}92,256</p>
                                 <span>+{i+2}.11%</span>
                             </div> 
                         ))}
