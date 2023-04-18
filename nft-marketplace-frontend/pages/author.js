@@ -21,7 +21,7 @@ const author = () => {
     const [created, setCreated] = useState(false);
     const [like, setLike] = useState(false);
     const [follower, setFollower] = useState(false);
-    const [following, setFollowing] = useEffect(false);
+    const [following, setFollowing] = useState(false);
     return (
         <div className={Style.banner}>
             <Banner bannerImage={images.creatorbackground2} />
