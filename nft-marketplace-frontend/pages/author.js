@@ -10,6 +10,7 @@ import {
   AuthorTaps,
   TabCard,
 } from "../authorPage/componentsIndex";
+import FollowerTabCard from "../components/FollowerTab/FollowerTabCard/FollowerTabCard";
 
 const author = () => {
   const popularArray = [
@@ -41,6 +42,10 @@ const author = () => {
         heading="Popular Creator"
         paragraph="Click on music icon and enjoy NFT music or audio"
       />
+
+      {/* {popularArray.map((el, i) => (
+        <FollowerTabCard key={i + 1} i={i} el={el} />
+      ))} */}
 
       <Brand />
     </div>
