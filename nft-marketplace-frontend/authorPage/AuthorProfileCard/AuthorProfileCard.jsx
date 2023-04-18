@@ -42,7 +42,7 @@ const AuthorProfileCard = () => {
   };
 
   const openReport = () => {
-    if (!share) {
+    if (!report) {
       setReport(true);
       setShare(false);
     } else {
