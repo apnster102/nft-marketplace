@@ -33,19 +33,16 @@ const author = () => {
       <Banner bannerImage={images.creatorbackground2} />
       <AuthorProfileCard />
       <AuthorTaps
-        collectiables={collectiables}
-        created={created}
-        like={like}
-        follower={follower}
+        collectiables={setCollectiables}
+        created={setCreated}
+        like={setLike}
+        follower={setFollower}
+        following={setFollowing}
       />
       <Title
         heading="Popular Creator"
         paragraph="Click on music icon and enjoy NFT music or audio"
       />
-
-      {/* {popularArray.map((el, i) => (
-        <FollowerTabCard key={i + 1} i={i} el={el} />
-      ))} */}
 
       <Brand />
     </div>
