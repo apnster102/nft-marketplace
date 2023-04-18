@@ -44,10 +44,6 @@ const author = () => {
         paragraph="Click on music icon and enjoy NFT music or audio"
       />
 
-      {/* {popularArray.map((el, i) => (
-        <FollowerTabCard key={i + 1} i={i} el={el} />
-      ))} */}
-
       <Brand />
     </div>
   );
