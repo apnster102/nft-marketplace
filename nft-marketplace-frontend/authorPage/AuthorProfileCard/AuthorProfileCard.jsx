@@ -13,7 +13,7 @@ import {
   TiSocialInstagram,
 } from "react-icons/ti";
 
-import { BsThreeBots } from "react-icons/bs";
+import { BsThreeDots } from "react-icons/bs";
 
 import Style from "./AuthorProfileCard.module.css";
 import images from "../../img";
@@ -143,7 +143,7 @@ const AuthorProfileCard = () => {
             </div>
           )}
 
-          <BsThreeBots
+          <BsThreeDots
             onClick={() => openReport()}
             className={Style.AuthorProfileCard_box_share_icon}
           />
