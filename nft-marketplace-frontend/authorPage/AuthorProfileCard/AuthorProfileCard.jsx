@@ -47,8 +47,89 @@ const AuthorProfileCard = () => {
           </h2>
 
           <div className={Style.AuthorProfileCard_box_info_address}>
-            <input type="text" value="" id="myInput"></input>
+            <input type="text" value="" id="myInput" />
+            <FiCopy
+              onClick={() => copyAddress()}
+              className={Style.AuthorProfileCard_box_info_address_icon}
+            />
           </div>
+
+          <p>intro</p>
+
+          <div className={Style.AuthorProfileCard_box_info_social}>
+            <a href="#">
+              <TiSocialFacebook />
+            </a>
+            <a href="#">
+              <TiSocialInstagram />
+            </a>
+            <a href="#">
+              <TiSocialLinkedin />
+            </a>
+            <a href="#">
+              <TiSocialYoutube />
+            </a>
+          </div>
+        </div>
+
+        <div className={Style.AuthorProfileCard_box_share}>
+          <Button btnName="Follow" handleClick={() => {}} />
+          <MdCloudUpload
+            onClick={() => openShare()}
+            className={Style.AuthorProfileCard_box_share_icon}
+          />
+
+          {share && (
+            <div className={Style.AuthorProfileCard_box_share_upload}>
+              <p>
+                <span>
+                  <TiSocialFacebook />
+                </span>
+                {""}
+                {""}
+                Facebook
+              </p>
+              <p>
+                <span>
+                  <TiSocialInstagram />
+                </span>
+                {""}
+                {""}
+                Instagram
+              </p>
+              <p>
+                <span>
+                  <TiSocialLinkedin />
+                </span>
+                {""}
+                {""}
+                LinkedIn
+              </p>
+              <p>
+                <span>
+                  <TiSocialYoutube />
+                </span>
+                {""}
+                {""}
+                Youtube
+              </p>
+            </div>
+          )}
+
+          <BsThreeBots
+            onClick={() => openReport()}
+            className={Style.AuthorProfileCard_box_share_icon}
+          />
+
+          {report && (
+            <p className={Style.AuthorProfileCard_box_share_report}>
+              <span>
+                <MdOutlineReportProblem />
+              </span>{""}
+              {""}
+              Report abouse
+            </p>
+          )}
         </div>
       </div>
     </div>
