@@ -23,6 +23,33 @@ import { Button } from "../../components/componentsindex";
 const AuthorProfileCard = () => {
   const [share, setShare] = useState(false);
   const [report, setReport] = useState(false);
+
+  // copy Address function
+  const copyAddress = () => {
+    const copyText = document.getElementById("myInput");
+
+    copyText.select();
+    navigator.clipboard.writeText(copyText.value);
+  };
+
+  const openShare = () => {
+    if (!share) {
+      setShare(true);
+      setReport(false);
+    } else {
+      setShare(false);
+    }
+  };
+
+  const openReport = () => {
+    if (!share) {
+      setReport(true);
+      setShare(false);
+    } else {
+      setReport(false);
+    }
+  };
+
   return (
     <div className={Style.AuthorProfileCard}>
       <div className={Style.AuthorProfileCard_box}>
@@ -125,7 +152,8 @@ const AuthorProfileCard = () => {
             <p className={Style.AuthorProfileCard_box_share_report}>
               <span>
                 <MdOutlineReportProblem />
-              </span>{""}
+              </span>
+              {""}
               {""}
               Report abouse
             </p>
