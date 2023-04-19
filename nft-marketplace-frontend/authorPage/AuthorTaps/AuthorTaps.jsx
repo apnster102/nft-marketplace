@@ -12,7 +12,7 @@ const AuthorTaps = ({
   setFollowing,
 }) => {
   const [openList, setOpenList] = useState(false);
-  const [activeBtn, setActiveBtn] = useState(0);
+  const [activeBtn, setActiveBtn] = useState(1);
   const [selectedMenu, setSelectedMenu] = useState("Most Recent");
 
   const listArray = [
@@ -32,6 +32,9 @@ const AuthorTaps = ({
 
   const openTab = (e) => {
     const btnText = e.target.innerText;
+
+    console.log(btnText);
+
     if (btnText == "Collectiables") {
       setCollectiables(true);
       setCreated(false);

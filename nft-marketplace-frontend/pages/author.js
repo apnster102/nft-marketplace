@@ -9,6 +9,7 @@ import {
   AuthorProfileCard,
   AuthorTaps,
   TabCard,
+  AuthorNFTCardBox,
 } from "../authorPage/componentsIndex";
 import FollowerTabCard from "../components/FollowerTab/FollowerTabCard/FollowerTabCard";
 
@@ -33,6 +34,14 @@ const author = () => {
       <Banner bannerImage={images.creatorbackground2} />
       <AuthorProfileCard />
       <AuthorTaps
+        collectiables={setCollectiables}
+        created={setCreated}
+        like={setLike}
+        follower={setFollower}
+        following={setFollowing}
+      />
+
+      <AuthorNFTCardBox
         collectiables={setCollectiables}
         created={setCreated}
         like={setLike}

@@ -84,16 +84,16 @@ const AuthorProfileCard = () => {
           <p>intro</p>
 
           <div className={Style.AuthorProfileCard_box_info_social}>
-            <a href="#">
+            <a href="https://www.facebook.com/" target="_blank">
               <TiSocialFacebook />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/?hl=en" target="_blank">
               <TiSocialInstagram />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/" target="_blank">
               <TiSocialLinkedin />
             </a>
-            <a href="#">
+            <a href="https://www.youtube.com/" target="_blank">
               <TiSocialYoutube />
             </a>
           </div>
