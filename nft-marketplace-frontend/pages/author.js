@@ -11,7 +11,7 @@ import {
   TabCard,
   AuthorNFTCardBox,
 } from "../authorPage/componentsIndex";
-import FollowerTabCard from "../components/FollowerTab/FollowerTabCard/FollowerTabCard";
+import FollowerTabCard  from "../components/FollowerTab/FollowerTabCard/FollowerTabCard";
 
 const author = () => {
   const popularArray = [
@@ -34,11 +34,11 @@ const author = () => {
       <Banner bannerImage={images.creatorbackground2} />
       <AuthorProfileCard />
       <AuthorTaps
-        collectiables={setCollectiables}
-        created={setCreated}
-        like={setLike}
-        follower={setFollower}
-        following={setFollowing}
+        setCollectiables={setCollectiables}
+        setCreated={setCreated}
+        setLike={setLike}
+        setFollower={setFollower}
+        setFollowing={setFollowing}
       />
 
       <AuthorNFTCardBox

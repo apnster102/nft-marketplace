@@ -43,18 +43,45 @@ const AuthorNFTCardBox = ({
   ];
 
   const followerArray = [
-    images.user3,
-    images.user5,
-    images.user8,
-    images.user2,
+    {
+      background: images.creatorbackground2,
+      images: images.user2,
+    },
+    {
+      background: images.creatorbackground4,
+      images: images.user4,
+    },
+    {
+      background: images.creatorbackground6,
+      images: images.user6,
+    },
   ];
 
   const followingArray = [
-    images.user1,
-    images.user2,
-    images.user3,
-    images.user4,
-    images.user5,
+    {
+      background: images.creatorbackground2,
+      images: images.user2,
+    },
+    {
+      background: images.creatorbackground6,
+      images: images.user6,
+    },
+    {
+      background: images.creatorbackground10,
+      images: images.user10,
+    },
+    {
+      background: images.creatorbackground3,
+      images: images.user3,
+    },
+    {
+      background: images.creatorbackground4,
+      images: images.user4,
+    },
+    {
+      background: images.creatorbackground9,
+      images: images.user9,
+    },
   ];
 
   return (
@@ -62,8 +89,20 @@ const AuthorNFTCardBox = ({
       {collectiables && <NFTCardTwo NFTData={collectiablesArray} />}
       {created && <NFTCardTwo NFTData={createdArray} />}
       {like && <NFTCardTwo NFTData={likeArray} />}
-      {follower && <FollowerTabCard NFTData={followerArray} />}
-      {following && <FollowerTabCard NFTData={followingArray} />}
+      {follower && (
+        <div className={Style.AuthorNFTCardBox_box}>
+          {followerArray.map((el, i) => (
+            <FollowerTabCard i={i} el={el} />
+          ))}
+        </div>
+      )}
+      {following && (
+        <div className={Style.AuthorNFTCardBox_box}>
+          {followingArray.map((el, i) => (
+            <FollowerTabCard i={i} el={el} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
