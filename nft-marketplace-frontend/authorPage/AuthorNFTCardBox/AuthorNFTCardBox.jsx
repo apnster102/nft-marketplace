@@ -45,42 +45,42 @@ const AuthorNFTCardBox = ({
   const followerArray = [
     {
       background: images.creatorbackground2,
-      images: images.user2,
+      user: images.user2,
     },
     {
       background: images.creatorbackground4,
-      images: images.user4,
+      user: images.user4,
     },
     {
       background: images.creatorbackground6,
-      images: images.user6,
+      user: images.user6,
     },
   ];
 
   const followingArray = [
     {
       background: images.creatorbackground2,
-      images: images.user2,
+      user: images.user2,
     },
     {
       background: images.creatorbackground6,
-      images: images.user6,
+      user: images.user6,
     },
     {
       background: images.creatorbackground10,
-      images: images.user10,
+      user: images.user10,
     },
     {
       background: images.creatorbackground3,
-      images: images.user3,
+      user: images.user3,
     },
     {
       background: images.creatorbackground4,
-      images: images.user4,
+      user: images.user4,
     },
     {
       background: images.creatorbackground9,
-      images: images.user9,
+      user: images.user9,
     },
   ];
 
