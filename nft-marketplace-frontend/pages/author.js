@@ -14,16 +14,21 @@ import {
 import FollowerTabCard from "../components/FollowerTab/FollowerTabCard/FollowerTabCard";
 
 const author = () => {
-  const popularArray = [
-    images.user1,
-    images.user2,
-    images.user3,
-    images.user4,
-    images.user5,
-    images.user6,
-    images.user7,
-    images.user8,
+  const followerArray = [
+    {
+      background: images.creatorbackground2,
+      user: images.user2,
+    },
+    {
+      background: images.creatorbackground4,
+      user: images.user4,
+    },
+    {
+      background: images.creatorbackground6,
+      user: images.user6,
+    },
   ];
+
   const [collectiables, setCollectiables] = useState(true);
   const [created, setCreated] = useState(false);
   const [like, setLike] = useState(false);
@@ -34,11 +39,11 @@ const author = () => {
       <Banner bannerImage={images.creatorbackground2} />
       <AuthorProfileCard />
       <AuthorTaps
-        collectiables={setCollectiables}
-        created={setCreated}
-        like={setLike}
-        follower={setFollower}
-        following={setFollowing}
+        setCollectiables={setCollectiables}
+        setCreated={setCreated}
+        setLike={setLike}
+        setFollower={setFollower}
+        setFollowing={setFollowing}
       />
 
       <AuthorNFTCardBox
@@ -52,6 +57,11 @@ const author = () => {
         heading="Popular Creator"
         paragraph="Click on music icon and enjoy NFT music or audio"
       />
+      <div className={Style.author_box}>
+        {followerArray.map((el, i) => (
+          <FollowerTabCard i={i} el={el} />
+        ))}
+      </div>
 
       <Brand />
     </div>

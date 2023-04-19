@@ -79,31 +79,31 @@ const AuthorTaps = ({
         <div className={Style.AuthorTaps_box_left}>
           <div className={Style.AuthorTaps_box_left_btn}>
             <button
-              className={'${activeBtn == 1 ? Style.active : ""}'}
+              className={`${activeBtn == 1 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
               Collectiables{""}
             </button>
             <button
-              className={'${activeBtn == 2 ? Style.active : ""}'}
+              className={`${activeBtn == 2 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
               Created{""}
             </button>
             <button
-              className={'${activeBtn == 3 ? Style.active : ""}'}
+              className={`${activeBtn == 3 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
               Liked{""}
             </button>
             <button
-              className={'${activeBtn == 4 ? Style.active : ""}'}
+              className={`${activeBtn == 4 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
               Following{""}
             </button>
             <button
-              className={'${activeBtn == 5 ? Style.active : ""}'}
+              className={`${activeBtn == 5 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
               Followers{""}
