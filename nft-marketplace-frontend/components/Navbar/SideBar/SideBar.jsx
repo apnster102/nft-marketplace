@@ -6,7 +6,6 @@ import { GrClose } from "react-icons/gr";
 import {
   TiSocialFacebook,
   TiSocialLinkedin,
-  TiSocialTwitter,
   TiSocialYoutube,
   TiSocialInstagram,
   TiArrowSortedDown,
@@ -114,7 +113,6 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
       />
 
       <div className={Style.sideBar_box}>
-        {/* <Image src={images.logo} alt="logo" width={150} height={150} /> */}
         <p>
           <a href="/">
             <DiJqueryLogo className={Style.sideBar_box_logo} />
@@ -125,20 +123,17 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
           your own stories and share them
         </p>
         <div className={Style.sideBar_social}>
-          <a href="#">
+          <a href="https://www.facebook.com/" target="_blank">
             <TiSocialFacebook />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/?hl=en" target="_blank">
+            <TiSocialInstagram />
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
             <TiSocialLinkedin />
           </a>
-          <a href="#">
-            <TiSocialTwitter />
-          </a>
-          <a href="#">
+          <a href="https://www.youtube.com/" target="_blank">
             <TiSocialYoutube />
-          </a>
-          <a href="#">
-            <TiSocialInstagram />
           </a>
         </div>
       </div>
