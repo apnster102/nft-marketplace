@@ -120,20 +120,17 @@ const NFTDescription = ({ nft }) => {
 
             {social && (
               <div className={Style.NFTDescription_box_share_box_social}>
-                <a href="#">
-                  <TiSocialFacebook /> Facebook
+                <a href="https://www.facebook.com/" target="_blank">
+                  <TiSocialFacebook />
                 </a>
-                <a href="#">
-                  <TiSocialInstagram /> Instagram
+                <a href="https://www.instagram.com/?hl=en" target="_blank">
+                  <TiSocialInstagram />
                 </a>
-                <a href="#">
-                  <TiSocialLinkedin /> LinkedIn
+                <a href="https://www.linkedin.com/" target="_blank">
+                  <TiSocialLinkedin />
                 </a>
-                <a href="#">
-                  <TiSocialTwitter /> Twitter
-                </a>
-                <a href="#">
-                  <TiSocialYoutube /> YouTube
+                <a href="https://www.youtube.com/" target="_blank">
+                  <TiSocialYoutube />
                 </a>
               </div>
             )}
@@ -163,9 +160,7 @@ const NFTDescription = ({ nft }) => {
         </div>
         {/* //Part TWO */}
         <div className={Style.NFTDescription_box_profile}>
-          <h1>
-            Bear - #12345
-          </h1>
+          <h1>Bear - #12345</h1>
           <div className={Style.NFTDescription_box_profile_box}>
             <div className={Style.NFTDescription_box_profile_box_left}>
               <Image
@@ -177,9 +172,9 @@ const NFTDescription = ({ nft }) => {
               />
               <div className={Style.NFTDescription_box_profile_box_left_info}>
                 <small>Creator</small> <br />
-                  <span>
-                    Apnster <MdVerified />
-                  </span>
+                <span>
+                  Apnster <MdVerified />
+                </span>
               </div>
             </div>
 
@@ -257,12 +252,12 @@ const NFTDescription = ({ nft }) => {
             </div>
 
             <div className={Style.NFTDescription_box_profile_biding_box_button}>
-                <Button
-                  icon=<FaWallet />
-                  btnName="Make a bid"
-                  handleClick={() => {}}
-                  classStyle={Style.button}
-                />
+              <Button
+                icon=<FaWallet />
+                btnName="Make a bid"
+                handleClick={() => {}}
+                classStyle={Style.button}
+              />
 
               <Button
                 icon=<FaPercentage />

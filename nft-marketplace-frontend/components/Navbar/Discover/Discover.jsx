@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 //INTERNAL IMPORT
 import Style from "./Discover.module.css";
 
 const Discover = () => {
+  const [isDiscoverOpen, setIsDiscoverOpen] = React.useState(false);
+
+  const handleMenuClick = () => {
+    setIsMenuOpen(false);
+  };
+
   //--------DISCOVER NAVIGATION MENU
   const discover = [
     {
@@ -44,7 +50,9 @@ const Discover = () => {
     <div>
       {discover.map((el, i) => (
         <div key={i + 1} className={Style.discover}>
-          <Link href={{ pathname: `${el.link}` }}>{el.name}</Link>
+          <Link href={{ pathname: `${el.link}` }} >
+            {el.name}
+          </Link>
         </div>
       ))}
     </div>
