@@ -75,11 +75,6 @@
     padding: 1rem 2rem;
 }
 
-.footer_box_discover{
-    position: relative;
-    cursor: pointer;
-}
-
 /* //MEDIA QUERY */
 @media screen and (max-width: 45em) {
     .footer_box{
