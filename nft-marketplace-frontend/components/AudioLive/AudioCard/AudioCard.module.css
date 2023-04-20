@@ -47,7 +47,7 @@ transition:  all .3s ease-in;
 
 .audioCard_box_time{
     background-color: var(--main-bg-color);
-    padding: 1rem 4.5rem;
+    padding: 1rem 1.5rem;
     margin-right: -1.4rem;
     transform: skewX(35deg);
     border-bottom-left-radius: 1rem;

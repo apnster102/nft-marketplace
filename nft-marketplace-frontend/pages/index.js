@@ -22,7 +22,7 @@ import {
 } from "../components/componentsindex";
 import { getTopCreators } from "../TopCreators/TopCreators";
 
-//IMPORTING CONTRCT DATA
+//IMPORTING CONTRACT DATA
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
 
 const Home = () => {
@@ -51,7 +51,7 @@ const Home = () => {
   //CREATOR LIST
 
   const creators = getTopCreators(nfts);
-  // console.log(creators);
+  console.log(creators);
 
   return (
     <div className={Style.homePage}>
