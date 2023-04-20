@@ -5,12 +5,6 @@ import Link from "next/link";
 import Style from "./Discover.module.css";
 
 const Discover = () => {
-  const [isDiscoverOpen, setIsDiscoverOpen] = React.useState(false);
-
-  const handleMenuClick = () => {
-    setIsMenuOpen(false);
-  };
-
   //--------DISCOVER NAVIGATION MENU
   const discover = [
     {

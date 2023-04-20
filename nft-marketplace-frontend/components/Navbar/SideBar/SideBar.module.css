@@ -52,6 +52,8 @@
     text-transform: uppercase;
     font-weight: 500;
     border-bottom:  1px solid var(--icons-color);
+    position: relative;
+    cursor: pointer;
 }
 
 .sideBar_menu_box{
@@ -59,6 +61,7 @@
     justify-content:  space-between;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
 
 .sideBar_discover{
@@ -71,4 +74,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.none{
+    display: block;
 }
