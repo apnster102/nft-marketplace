@@ -76,7 +76,7 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
       link: "signUp",
     },
     {
-      name: "LogIn",
+      name: "Log In",
       link: "login",
     },
     {
