@@ -27,7 +27,7 @@ const contactus = () => {
             </div>
             <div className={Style.contactus_box_box_left_item}>
               <h3>EMAIL</h3>
-              <p>studentid@vnu.edu.vn</p>
+              <p>studentID@vnu.edu.vn</p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
               <h3>PHONE</h3>
@@ -58,7 +58,7 @@ const contactus = () => {
                 <label htmlFor="name">Full Name</label>
                 <input
                   type="text"
-                  placeholder="dnaxxdy"
+                  placeholder="Enter your full name"
                   className={formStyle.Form_box_input_userName}
                 />
               </div>
@@ -78,7 +78,7 @@ const contactus = () => {
                   id=""
                   cols="30"
                   rows="6"
-                  placeholder="something about yourself in few words"
+                  placeholder="Please share something about yourself in few words"
                 ></textarea>
               </div>
               <Button
