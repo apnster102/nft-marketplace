@@ -7,7 +7,7 @@ import Style from "./HelpCenter.module.css";
 const HelpCenter = () => {
   const helpCenter = [
     {
-      name: "About",
+      name: "About Us",
       link: "aboutus",
     },
     {

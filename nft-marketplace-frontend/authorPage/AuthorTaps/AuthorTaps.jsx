@@ -5,7 +5,7 @@ import { TiArrowSortedDown, TiArrowSortedUp, TiTick } from "react-icons/ti";
 import Style from "./AuthorTaps.module.css";
 
 const AuthorTaps = ({
-  setCollectiables,
+  setCollectibles,
   setCreated,
   setLike,
   setFollower,
@@ -17,7 +17,7 @@ const AuthorTaps = ({
 
   const listArray = [
     "Created by admin",
-    "Most Appreciated",
+    "Most Liked",
     "Most Discussed",
     "Most View",
   ];
@@ -35,36 +35,36 @@ const AuthorTaps = ({
 
     console.log(btnText);
 
-    if (btnText == "Collectiables") {
-      setCollectiables(true);
+    if (btnText == "Collectibles") {
+      setCollectibles(true);
       setCreated(false);
       setFollower(false);
       setFollowing(false);
       setLike(false);
       setActiveBtn(1);
     } else if (btnText == "Created") {
-      setCollectiables(false);
+      setCollectibles(false);
       setCreated(true);
       setFollower(false);
       setFollowing(false);
       setLike(false);
       setActiveBtn(2);
     } else if (btnText == "Liked") {
-      setCollectiables(false);
+      setCollectibles(false);
       setCreated(false);
       setFollower(false);
       setFollowing(false);
       setLike(true);
       setActiveBtn(3);
     } else if (btnText == "Following") {
-      setCollectiables(false);
+      setCollectibles(false);
       setCreated(false);
       setFollower(false);
       setFollowing(true);
       setLike(false);
       setActiveBtn(4);
     } else if (btnText == "Followers") {
-      setCollectiables(false);
+      setCollectibles(false);
       setCreated(false);
       setFollower(true);
       setFollowing(false);
@@ -82,7 +82,7 @@ const AuthorTaps = ({
               className={`${activeBtn == 1 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
-              Collectiables{""}
+              Collectibles{""}
             </button>
             <button
               className={`${activeBtn == 2 ? Style.active : ""}`}
