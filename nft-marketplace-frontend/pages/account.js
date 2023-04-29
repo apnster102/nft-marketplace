@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useCallback, useContext } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import { useDropzone } from "react-dropzone";
 
@@ -19,6 +20,10 @@ const account = () => {
     accept: "image/*",
     maxSize: 5000000,
   });
+
+  useEffect(() => {
+    document.title = "Profile Settings";
+  }, []);
 
   return (
     <div className={Style.account}>

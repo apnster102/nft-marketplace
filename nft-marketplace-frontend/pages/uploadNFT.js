@@ -9,14 +9,19 @@ import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
 
 const uploadNFT = () => {
   const { uploadToIPFS, createNFT } = useContext(NFTMarketplaceContext);
+
+  useEffect(() => {
+    document.title = "Upload NFT";
+  }, []);
+
   return (
     <div className={Style.uploadNFT}>
       <div className={Style.uploadNFT_box}>
         <div className={Style.uploadNFT_box_heading}>
           <h1>Create New NFT</h1>
           <p>
-            You can set display name, your profile URL and
-            manage other personal settings.
+            You can set display name, your profile URL and manage other personal
+            settings.
           </p>
         </div>
 

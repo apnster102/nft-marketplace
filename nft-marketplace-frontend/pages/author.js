@@ -34,6 +34,11 @@ const author = () => {
   const [like, setLike] = useState(false);
   const [follower, setFollower] = useState(false);
   const [following, setFollowing] = useState(false);
+  
+  useEffect(() => {
+    document.title = "Author Profile";
+  }, []);
+  
   return (
     <div className={Style.banner}>
       <Banner bannerImage={images.creatorbackground2} />
