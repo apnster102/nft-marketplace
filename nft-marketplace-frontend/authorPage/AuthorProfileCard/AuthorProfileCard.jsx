@@ -65,7 +65,7 @@ const AuthorProfileCard = () => {
 
         <div className={Style.AuthorProfileCard_box_info}>
           <h2>
-            Token xxdy{""}{" "}
+            Crypto Wildlife{""}{" "}
             <span>
               {" "}
               <MdVerified />{" "}
@@ -81,7 +81,19 @@ const AuthorProfileCard = () => {
             />
           </div>
 
-          <p>intro</p>
+          <p>
+            Crypto Wildlife is a collection of non-fungible tokens (NFTs) that
+            represent various species of animals in the wild. Each token is
+            unique and can be owned by a single individual or entity on the
+            blockchain, making them one-of-a-kind collectibles. With Crypto
+            Wildlife, animal lovers and collectors can own a piece of the wild
+            in digital form. The tokens are created using cutting-edge
+            technology and are stored on a secure and decentralized blockchain,
+            ensuring their authenticity and ownership. Whether you're a fan of
+            tigers, lions, elephants, or any other wild animal, there is a
+            Crypto Wildlife token for you. Explore the collection and discover
+            the beauty of the animal kingdom in a new and innovative way.
+          </p>
 
           <div className={Style.AuthorProfileCard_box_info_social}>
             <a href="https://www.facebook.com/" target="_blank">
