@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 
 import Style from "../styles/searchPage.module.css";
 import { Slider, Brand } from "../components/componentsindex";
@@ -19,7 +20,9 @@ const searchPage = () => {
     images.nft_image_2,
     images.nft_image_3,
   ];
-
+  useEffect(() => {
+    document.title = "Search Page";
+  }, []);
   return (
     <div className={Style.searchPage}>
       <Banner bannerImage={images.creatorbackground8} />

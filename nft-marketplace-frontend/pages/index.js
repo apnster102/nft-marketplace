@@ -53,6 +53,10 @@ const Home = () => {
   const creators = getTopCreators(nfts);
   console.log(creators);
 
+  useEffect(() => {
+    document.title = "index.js";
+  }, []);
+
   return (
     <div className={Style.homePage}>
       <HeroSection />

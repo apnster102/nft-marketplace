@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { useEffect } from "react";
 
 import Style from "../styles/aboutus.module.css";
 import { Brand } from "../components/componentsindex";
@@ -38,6 +39,10 @@ const aboutus = () => {
       info: "Countries and regions have our presence (as of 04/2023)",
     },
   ];
+
+  useEffect(() => {
+    document.title = "About Us";
+  }, []);
   return (
     <div className={Style.aboutus}>
       <div className={Style.aboutus_box}>

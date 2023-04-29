@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+
 import {
   TiSocialFacebook,
   TiSocialLinkedin,
@@ -12,6 +14,10 @@ import formStyle from "../components/AccountPage/Form/Form.module.css";
 import { Button } from "../components/componentsindex";
 
 const contactus = () => {
+  useEffect(() => {
+    document.title = "Contact Us";
+  }, []);
+
   return (
     <div className={Style.contactus}>
       <div className={Style.contactus_box}>

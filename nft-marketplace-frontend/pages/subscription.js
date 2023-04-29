@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 
 import Style from "../styles/subscription.module.css";
 import { Subscription } from "../Subscription/Subscription";
@@ -23,10 +24,20 @@ const subscription = () => {
       plan: "SMARTER",
       price: "$12/month",
       popular: "",
-      service: ["Unlimited Builds", "Smarter Processing", "Faster Processing", "Company Evaluations"],
+      service: [
+        "Unlimited Builds",
+        "Smarter Processing",
+        "Faster Processing",
+        "Company Evaluations",
+      ],
       info: "",
     },
   ];
+
+  useEffect(() => {
+    document.title = "Price Page";
+  }, []);
+
   return (
     <div className={Style.subscription}>
       <div className={Style.subscription_box}>
@@ -36,7 +47,7 @@ const subscription = () => {
         </div>
         <div className={Style.subscription_box_box}>
           {subscriptionArray.map((el, i) => (
-            <Subscription key={i+1} i={1} el={el} />
+            <Subscription key={i + 1} i={1} el={el} />
           ))}
         </div>
       </div>

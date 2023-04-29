@@ -28,6 +28,11 @@ const connectWallet = () => {
     //   name: "Formatic",
     // },
   ];
+
+  useEffect(() => {
+    document.title = "Connect Wallet";
+  }, []);
+
   return (
     <div className={Style.connectWallet}>
       <div className={Style.connectWallet_box}>
