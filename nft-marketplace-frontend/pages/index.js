@@ -54,7 +54,7 @@ const Home = () => {
   console.log(creators);
 
   useEffect(() => {
-    document.title = "index.js";
+    document.title = "NFT Marketplace";
   }, []);
 
   return (

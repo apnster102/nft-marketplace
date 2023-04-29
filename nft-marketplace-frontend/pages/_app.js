@@ -6,9 +6,6 @@ import { NFTMarketplaceProvider } from "../Context/NFTMarketplaceContext";
 
 const MyApp = ({ Component, pageProps }) => (
   <div>
-    <Head>
-      <title>NFT Marketplace Group 22</title>
-    </Head>
     <NFTMarketplaceProvider>
       <NavBar />
       <Component {...pageProps} />
@@ -18,3 +15,7 @@ const MyApp = ({ Component, pageProps }) => (
 );
 
 export default MyApp;
+
+// useEffect(() => {
+//   document.title = "Connect Wallet";
+// }, []);
