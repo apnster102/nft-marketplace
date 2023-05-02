@@ -178,7 +178,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
           });
 
       await transaction.wait();
-      //router.push("/searchPage");
+      router.push("/searchPage");
       console.log(transaction);
     } catch (error) {
       setError("error while creating sale");
@@ -191,11 +191,11 @@ export const NFTMarketplaceProvider = ({ children }) => {
 
   const fetchNFTs = async () => {
     try {
-      const provider = new ethers.providers.JsonRpcProvider(
-        //--process.env.NEXT_PUBLIC_POLYGON_MUMBAI_RPC
-        "https://polygon-mumbai.g.alchemy.com/v2/0awa485pp03Dww2fTjrSCg7yHlZECw-K"
-      );
-
+      // const provider = new ethers.providers.JsonRpcProvider(
+      //   //--process.env.NEXT_PUBLIC_POLYGON_MUMBAI_RPC
+      //   "https://polygon-mumbai.g.alchemy.com/v2/0awa485pp03Dww2fTjrSCg7yHlZECw-K"
+      // );
+      const provider = new ethers.providers.JsonRpcProvider();
       const contract = fetchContract(provider);
 
       const data = await contract.fetchMarketItem();

@@ -19,6 +19,7 @@ const DropZone = ({
   properties,
   uploadToIPFS,
   setImage,
+  price,
 }) => {
   const [fileUrl, setFileUrl] = useState(null);
   
