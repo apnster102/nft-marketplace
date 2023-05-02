@@ -1,0 +1,13 @@
+.bannerImageMobile {
+    display: none;
+}
+
+@media screen and (max-width: 35em) {
+    .bannerImageMobile {
+        display: block;
+    }
+
+    .bannerImage {
+        display: none;
+    }
+}
