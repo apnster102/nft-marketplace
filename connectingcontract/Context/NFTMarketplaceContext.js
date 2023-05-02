@@ -198,7 +198,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
 
       const contract = fetchContract(provider);
 
-      const data = await contract.fetchMarketItems();
+      const data = await contract.fetchMarketItem();
 
       const items = await Promise.all(
         data.map(
@@ -249,7 +249,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
         const data =
           type == "fetchItemsListed"
             ? await contract.fetchItemsListed()
-            : await contract.fetchMyNFTs();
+            : await contract.fetchMyNFT();
 
         const items = await Promise.all(
           data.map(
@@ -319,7 +319,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
 
   const connectToTransferFunds = async () => {
     try {
-      const web3Modal = new Wenb3Modal();
+      const web3Modal = new Web3Modal();
       const connection = await web3Modal.connect();
       const provider = new ethers.providers.Web3Provider(connection);
       const signer = provider.getSigner();
