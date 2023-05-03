@@ -140,13 +140,6 @@ const BigNFTSlider = () => {
               </p>
             </div>
 
-            <p className={Style.bigNFTSlider_box_left_bidding_box_auction}>
-              <MdTimer
-                className={Style.bigNFTSlider_box_left_bidding_box_icon}
-              />
-              <span>Auction ending in</span>
-            </p>
-
             <div className={Style.bigNFTSlider_box_left_bidding_box_timer}>
               <div
                 className={Style.bigNFTSlider_box_left_bidding_box_timer_item}
