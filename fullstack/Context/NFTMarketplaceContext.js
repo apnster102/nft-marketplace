@@ -206,14 +206,17 @@ export const NFTMarketplaceProvider = ({ children }) => {
           data.map(
             async ({ tokenID, seller, owner, price: unformattedPrice }) => {
               console.log('Retrieving tokenURI for tokenID:', tokenID);
-              console.log('contract:', contract);
+              // console.log('contract:', contract);
+              // const metadata = await contract.tokenMetadata(tokenID);
+              // console.log('metadata', metadata);
               const tokenURI = await contract.tokenURI(tokenID);
-              console.log('tokenURI', tokenURI, 'nothing');
+              // console.log('tokenURI', tokenURI, 'nothing');
+
               const {
                 data: { image, name, description },
               } = await axios.get(tokenURI);
+
               console.log(image, name, description);
-              // console.log('unformattedPrice: ', unformattedPrice);
               let price;
               if (unformattedPrice == undefined) {
                 price = "0"; // set default price to 0 if unformattedPrice is undefined
