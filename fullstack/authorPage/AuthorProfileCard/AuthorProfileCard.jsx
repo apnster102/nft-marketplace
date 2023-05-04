@@ -20,7 +20,7 @@ import images from "../../img";
 
 import { Button } from "../../components/componentsindex";
 
-const AuthorProfileCard = () => {
+const AuthorProfileCard = ({ currentAccount }) => {
   const [share, setShare] = useState(false);
   const [report, setReport] = useState(false);
 
@@ -74,7 +74,7 @@ const AuthorProfileCard = () => {
           </h2>
 
           <div className={Style.AuthorProfileCard_box_info_address}>
-            <input type="text" value="" id="myInput" />
+            <input type="text" value={currentAccount} id="myInput" />
             <FiCopy
               onClick={() => copyAddress()}
               className={Style.AuthorProfileCard_box_info_address_icon}
