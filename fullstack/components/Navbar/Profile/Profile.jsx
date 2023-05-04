@@ -32,19 +32,19 @@ const Profile = ({ currentAccount }) => {
           <div className={Style.profile_menu_one_item}>
             <FaUserAlt />
             <p>
-              <Link href={{ pathname: "/author" }}>My Profile</Link>
+              <a href="/author">My Profile</a>
             </p>
           </div>
           <div className={Style.profile_menu_one_item}>
             <FaRegImage />
             <p>
-              <Link href={{ pathname: "/author" }}>My Items</Link>
+              <a href="/author">My Items</a>
             </p>
           </div>
           <div className={Style.profile_menu_one_item}>
             <FaUserEdit />
             <p>
-              <Link href={{ pathname: "/account" }}>Edit Profile</Link>
+              <a href="/account">Edit Profile</a>
             </p>
           </div>
         </div>
@@ -53,13 +53,13 @@ const Profile = ({ currentAccount }) => {
           <div className={Style.profile_menu_one_item}>
             <MdHelpCenter />
             <p>
-              <Link href={{ pathname: "/contactus" }}>Help</Link>
+              <a href="/contactus">Help</a>
             </p>
           </div>
           <div className={Style.profile_menu_one_item}>
             <TbDownload />
             <p>
-              <Link href={{ pathname: "/aboutus" }}>About Us</Link>
+              <a href="/aboutus">About Us</a>
             </p>
           </div>
         </div>
