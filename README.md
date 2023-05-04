@@ -11,3 +11,12 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
+```shell
+npx hardhat init
+npm install --save-dev "hardhat@^2.13.0" "@nomicfoundation/hardhat-toolbox@^2.0.0"
+npm i ether
+npm i web3modal
+npm i @openzeppelin/contracts
+npx hardhat node (mở terminal mới để nó chạy, ko tắt !!)
+npx hardhat run scripts/deploy.js --network localhost
+```
