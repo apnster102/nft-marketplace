@@ -1,9 +1,10 @@
-import React, {useState, useEffect} from 'react';
-import Image from 'next/image';
-import { BsImages } from 'react-icons/bs';
-import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
-import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti';
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import { BsImages } from "react-icons/bs";
+import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 
+//INTERNAL IMPORT
 import Style from "./NFTDetailsImg.module.css";
 import images from "../../img";
 
@@ -13,7 +14,7 @@ const NFTDetailsImg = ({ nft }) => {
   const [like, setLike] = useState(false);
 
   const openDescription = () => {
-    if(!description) {
+    if (!description) {
       setDescription(true);
     } else {
       setDescription(false);
@@ -21,20 +22,20 @@ const NFTDetailsImg = ({ nft }) => {
   };
 
   const openDetails = () => {
-    if(!details) {
+    if (!details) {
       setDetails(true);
     } else {
       setDetails(false);
     }
-  }
+  };
 
   const likeNFT = () => {
-    if(!like) {
+    if (!like) {
       setLike(true);
     } else {
       setLike(false);
     }
-  }
+  };
 
   return (
     <div className={Style.NFTDetailsImg}>
@@ -61,8 +62,8 @@ const NFTDetailsImg = ({ nft }) => {
               src={nft.image}
               className={Style.NFTDetailsImg_box_NFT_img_img}
               alt="NFT image"
-              width={600}
-              height={600}
+              width={700}
+              height={800}
               objectFit="cover"
             />
           </div>
@@ -100,8 +101,7 @@ const NFTDetailsImg = ({ nft }) => {
             </p>
             <p>
               <small>Token ID</small>
-              &nbsp; &nbsp; 
-              {nft.tokenID}
+              &nbsp; &nbsp; {nft.tokenId}
             </p>
           </div>
         )}
@@ -110,4 +110,4 @@ const NFTDetailsImg = ({ nft }) => {
   );
 };
 
-export default NFTDetailsImg
+export default NFTDetailsImg;

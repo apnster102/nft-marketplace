@@ -30,11 +30,11 @@ const aboutus = () => {
       info: "Articles have been public around the world (as of 04/2023)",
     },
     {
-      title: "999,999",
+      title: "999999",
       info: "Registered users account (as of 04/2023)",
     },
     {
-      title: "999+",
+      title: "100+",
       info: "Countries and regions have our presence (as of 04/2023)",
     },
   ];

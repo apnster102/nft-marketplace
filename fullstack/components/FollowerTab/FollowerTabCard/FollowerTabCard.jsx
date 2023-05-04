@@ -29,7 +29,7 @@ const FollowerTabCard = ({ i, el }) => {
           <Image
             className={Style.FollowerTabCard_box_img_img}
             src={el.background || images[`creatorbackground${i + 1}`]}
-            alt="profile background"
+            alt="profile braground"
             width={500}
             height={300}
             objectFit="cover"
@@ -48,13 +48,13 @@ const FollowerTabCard = ({ i, el }) => {
 
         <div className={Style.FollowerTabCard_box_info}>
           <div className={Style.FollowerTabCard_box_info_name}>
-            {/* <h4>
+            <h4>
               {el.seller.slice(0, 9)}
               {""}{" "}
               <span>
                 <MdVerified />
               </span>
-            </h4> */}
+            </h4>
             <p>{el.total || 0} ETH</p>
           </div>
 

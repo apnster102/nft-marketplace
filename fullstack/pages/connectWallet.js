@@ -23,17 +23,17 @@ const connectWallet = () => {
       provider: images.provider3,
       name: "walletlink",
     },
-    // {
-    //   provider: images.provider1,
-    //   name: "Formatic",
-    // },
+    {
+      provider: images.provider1,
+      name: "Formatic",
+    },
   ];
   return (
     <div className={Style.connectWallet}>
       <div className={Style.connectWallet_box}>
         <h1>Connect your wallet</h1>
         <p className={Style.connectWallet_box_para}>
-          Connect with one of our available wallet providers or create a new one
+          Connect with one of our avaliabl wallet providers or create a new one
         </p>
 
         <div className={Style.connectWallet_box_provider}>

@@ -1,13 +1,15 @@
-.bannerImageMobile {
+
+
+.banner_img_mobile{
     display: none;
 }
 
 @media screen and (max-width: 35em) {
-    .bannerImageMobile {
+    .banner_img_mobile{
         display: block;
     }
 
-    .bannerImage {
+    .banner_img {
         display: none;
     }
 }

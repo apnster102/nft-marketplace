@@ -36,7 +36,7 @@ const SliderCard = ({ el, i }) => {
           </div>
 
           <div className={Style.sliderCard_box_price_time}>
-            <small>Reaming time</small>
+            <small>Remaining time</small>
             <p>
               {i + 1}h : 15m : {i + 4}0s
             </p>

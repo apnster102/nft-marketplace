@@ -6,7 +6,7 @@
 
 .contactus_box{
     width: 60%;
-    margin: 0 auto;
+    margin:  0 auto;
 }
 
 .contactus_box h1{
@@ -24,10 +24,10 @@
     margin-bottom: 10rem;
 }
 
-.contactus_box_left_item p{
+.contactus_box_box_left_item p{
     line-height: 1.2;
     width: 80%;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .contactus_box_box_left_item a{
@@ -40,7 +40,8 @@
     margin-top: 2rem;
 }
 
-@media screen and (max-width: 35em) {
+
+@media screen and (max-width:35em) {
     .contactus_box{
         width: 90%;
     }

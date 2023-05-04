@@ -1,6 +1,6 @@
 import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
-import { MdOutlineHttp, MdOutlineContentCopy, MdOutlineWallet } from "react-icons/md";
+import { MdOutlineHttp, MdOutlineContentCopy } from "react-icons/md";
 import {
   TiSocialFacebook,
   TiSocialTwitter,
@@ -9,7 +9,8 @@ import {
 
 //INTERNAL IMPORT
 import Style from "./Form.module.css";
-import { Button } from "../../componentsindex.js";
+import { Button } from "../../components/componentsindex.js";
+
 const Form = () => {
   return (
     <div className={Style.Form}>
@@ -19,7 +20,7 @@ const Form = () => {
             <label htmlFor="name">Username</label>
             <input
               type="text"
-              placeholder="Enter your name"
+              placeholder="shoaib bhai"
               className={Style.Form_box_input_userName}
             />
           </div>
@@ -30,7 +31,7 @@ const Form = () => {
               <div className={Style.Form_box_input_box_icon}>
                 <HiOutlineMail />
               </div>
-              <input type="text" placeholder="Enter your Email" />
+              <input type="text" placeholder="Email*" />
             </div>
           </div>
 
@@ -41,7 +42,7 @@ const Form = () => {
               id=""
               cols="30"
               rows="6"
-              placeholder="Write something about yourself in a few words"
+              placeholder="something about yourself in few words"
             ></textarea>
           </div>
 
@@ -52,18 +53,18 @@ const Form = () => {
                 <MdOutlineHttp />
               </div>
 
-              <input type="text" placeholder="Enter your websit URL" />
+              <input type="text" placeholder="website" />
             </div>
           </div>
 
           <div className={Style.Form_box_input_social}>
             <div className={Style.Form_box_input}>
-              <label htmlFor="Facebook">Facebook</label>
+              <label htmlFor="facebook">Facebook</label>
               <div className={Style.Form_box_input_box}>
                 <div className={Style.Form_box_input_box_icon}>
                   <TiSocialFacebook />
                 </div>
-                <input type="text" placeholder="link" />
+                <input type="text" placeholder="http://shoaib" />
               </div>
             </div>
             <div className={Style.Form_box_input}>
@@ -72,16 +73,16 @@ const Form = () => {
                 <div className={Style.Form_box_input_box_icon}>
                   <TiSocialTwitter />
                 </div>
-                <input type="text" placeholder="link" />
+                <input type="text" placeholder="http://shoaib" />
               </div>
             </div>
             <div className={Style.Form_box_input}>
-              <label htmlFor="Instagram">Instagram</label>
+              <label htmlFor="Instragram">Instragram</label>
               <div className={Style.Form_box_input_box}>
                 <div className={Style.Form_box_input_box_icon}>
                   <TiSocialInstagram />
                 </div>
-                <input type="text" placeholder="link" />
+                <input type="text" placeholder="http://shoaib" />
               </div>
             </div>
           </div>
@@ -90,7 +91,7 @@ const Form = () => {
             <label htmlFor="wallet">Wallet address</label>
             <div className={Style.Form_box_input_box}>
               <div className={Style.Form_box_input_box_icon}>
-                <MdOutlineWallet />
+                <MdOutlineHttp />
               </div>
               <input
                 type="text"

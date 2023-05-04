@@ -58,11 +58,10 @@
     padding: .2rem .5rem;
     border-radius: .2rem;
     color: var(--main-bg-color);
-    margin-left: 0;
 }
 
 .sliderCard_box_price_box p{
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     font-weight: 700;
     margin-top: 2rem;
     line-height: 0;

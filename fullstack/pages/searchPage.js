@@ -1,27 +1,33 @@
-import React, {useEffect, useState, useContext} from "react";
+import React, { useEffect, useState, useContext } from "react";
 
+//INTRNAL IMPORT
 import Style from "../styles/searchPage.module.css";
-import { Slider, Brand } from "../components/componentsindex";
-import { SearchBar } from "../SearchPage/SearchBarIndex";
+import { Slider, Brand, Loader } from "../components/componentsindex";
+import { SearchBar } from "../SearchPage/searchBarIndex";
 import { Filter } from "../components/componentsindex";
+
 import { NFTCardTwo, Banner } from "../collectionPage/collectionIndex";
 import images from "../img";
 
-// SMART CONTRACT IMPORT
+//SMART CONTRACT IMPORT
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
 
 const searchPage = () => {
-  const { fetchNFTs, setError } = useContext(NFTMarketplaceContext);
+  const { fetchNFTs, setError, currentAccount } = useContext(
+    NFTMarketplaceContext
+  );
   const [nfts, setNfts] = useState([]);
   const [nftsCopy, setNftsCopy] = useState([]);
-  
+
   useEffect(() => {
     try {
+      // if (currentAccount) {
       fetchNFTs().then((items) => {
-        setNfts(items);
-        setNftsCopy(items);    
+        setNfts(items.reverse());
+        setNftsCopy(items);
+        console.log(nfts);
       });
-      console.log('nft', nfts);
+      // }
     } catch (error) {
       setError("Please reload the browser", error);
     }
@@ -54,15 +60,16 @@ const searchPage = () => {
   //   images.nft_image_3,
   //   images.nft_image_1,
   //   images.nft_image_2,
-  //   images.nft_image_3,
   // ];
-
   return (
     <div className={Style.searchPage}>
-      <Banner bannerImage={images.creatorbackground8} />
-      <SearchBar onHandleSearch = {onHandleSearch} onClearSearch = {onClearSearch}/>
+      <Banner bannerImage={images.creatorbackground2} />
+      <SearchBar
+        onHandleSearch={onHandleSearch}
+        onClearSearch={onClearSearch}
+      />
       <Filter />
-      <NFTCardTwo NFTData={nfts} />
+      {nfts.length == 0 ? <Loader /> : <NFTCardTwo NFTData={nfts} />}
       <Slider />
       <Brand />
     </div>

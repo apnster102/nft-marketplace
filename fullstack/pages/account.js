@@ -5,7 +5,7 @@ import { useDropzone } from "react-dropzone";
 //INTERNAL IMPORT
 import Style from "../styles/account.module.css";
 import images from "../img";
-import Form from "../components/AccountPage/Form/Form";
+import From from "../AccountPage/Form/Form";
 
 const account = () => {
   const [fileUrl, setFileUrl] = useState(null);
@@ -42,8 +42,8 @@ const account = () => {
           />
           <p className={Style.account_box_img_para}>Change Image</p>
         </div>
-        <div className={Style.account_box_form}>
-          <Form />
+        <div className={Style.account_box_from}>
+          <From />
         </div>
       </div>
     </div>

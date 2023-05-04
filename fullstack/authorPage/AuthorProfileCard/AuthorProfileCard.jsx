@@ -12,19 +12,18 @@ import {
   TiSocialYoutube,
   TiSocialInstagram,
 } from "react-icons/ti";
-
 import { BsThreeDots } from "react-icons/bs";
 
+//INTERNAL IMPORT
 import Style from "./AuthorProfileCard.module.css";
 import images from "../../img";
-
-import { Button } from "../../components/componentsindex";
+import { Button } from "../../components/componentsindex.js";
 
 const AuthorProfileCard = ({ currentAccount }) => {
   const [share, setShare] = useState(false);
   const [report, setReport] = useState(false);
 
-  // copy Address function
+  //copyAddress function
   const copyAddress = () => {
     const copyText = document.getElementById("myInput");
 
@@ -53,9 +52,9 @@ const AuthorProfileCard = ({ currentAccount }) => {
   return (
     <div className={Style.AuthorProfileCard}>
       <div className={Style.AuthorProfileCard_box}>
-        <div className={Style.AuthorProfileCard_box_image}>
+        <div className={Style.AuthorProfileCard_box_img}>
           <Image
-            src={images.nft_image_2}
+            src={images.nft_image_1}
             className={Style.AuthorProfileCard_box_img_img}
             alt="NFT IMAGES"
             width={220}
@@ -65,12 +64,10 @@ const AuthorProfileCard = ({ currentAccount }) => {
 
         <div className={Style.AuthorProfileCard_box_info}>
           <h2>
-            Token xxdy{""}{" "}
+            Apnster{""}{" "}
             <span>
-              {" "}
-              <MdVerified />{" "}
-            </span>
-            {""}
+              <MdVerified />
+            </span>{" "}
           </h2>
 
           <div className={Style.AuthorProfileCard_box_info_address}>
@@ -81,19 +78,21 @@ const AuthorProfileCard = ({ currentAccount }) => {
             />
           </div>
 
-          <p>intro</p>
+          <p>
+            Team 22
+          </p>
 
           <div className={Style.AuthorProfileCard_box_info_social}>
-            <a href="https://www.facebook.com/" target="_blank">
+            <a href="#">
               <TiSocialFacebook />
             </a>
-            <a href="https://www.instagram.com/?hl=en" target="_blank">
+            <a href="#">
               <TiSocialInstagram />
             </a>
-            <a href="https://www.linkedin.com/" target="_blank">
+            <a href="#">
               <TiSocialLinkedin />
             </a>
-            <a href="https://www.youtube.com/" target="_blank">
+            <a href="#">
               <TiSocialYoutube />
             </a>
           </div>
@@ -111,34 +110,30 @@ const AuthorProfileCard = ({ currentAccount }) => {
               <p>
                 <span>
                   <TiSocialFacebook />
-                </span>
-                {""}
+                </span>{" "}
                 {""}
                 Facebook
               </p>
               <p>
                 <span>
                   <TiSocialInstagram />
-                </span>
+                </span>{" "}
                 {""}
-                {""}
-                Instagram
+                Instragram
               </p>
               <p>
                 <span>
                   <TiSocialLinkedin />
-                </span>
-                {""}
+                </span>{" "}
                 {""}
                 LinkedIn
               </p>
               <p>
                 <span>
                   <TiSocialYoutube />
-                </span>
+                </span>{" "}
                 {""}
-                {""}
-                Youtube
+                YouTube
               </p>
             </div>
           )}
@@ -152,8 +147,7 @@ const AuthorProfileCard = ({ currentAccount }) => {
             <p className={Style.AuthorProfileCard_box_share_report}>
               <span>
                 <MdOutlineReportProblem />
-              </span>
-              {""}
+              </span>{" "}
               {""}
               Report abouse
             </p>

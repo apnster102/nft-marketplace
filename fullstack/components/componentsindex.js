@@ -1,9 +1,9 @@
 import Button from "./Button/Button";
 import Footer from "./Footer/Footer";
-import NavBar from "./Navbar/NavBar";
+import NavBar from "./NavBar/NavBar";
 import HeroSection from "./HeroSection/HeroSection";
 import Service from "./Service/Service";
-import BigNFTSlider from "./BigNFTSlider/BigNFTSlider";
+import BigNFTSilder from "./BigNFTSilder/BigNFTSilder";
 import Subscribe from "./Subscribe/Subscribe";
 import Title from "./Title/Title";
 import Category from "./Category/Category";
@@ -14,9 +14,10 @@ import AudioLive from "./AudioLive/AudioLive";
 import LikeProfile from "./LikeProfile/LikeProfile";
 import FollowerTab from "./FollowerTab/FollowerTab";
 import Slider from "./Slider/Slider";
-import Error from "./Error/Error";
 import Brand from "./Brand/Brand";
 import Video from "./Video/Video";
+import Loader from "./Loader/Loader";
+import Error from "./Error/Error";
 
 export {
   Button,
@@ -24,7 +25,7 @@ export {
   NavBar,
   HeroSection,
   Service,
-  BigNFTSlider,
+  BigNFTSilder,
   Subscribe,
   Title,
   Category,
@@ -35,7 +36,8 @@ export {
   LikeProfile,
   FollowerTab,
   Slider,
-  Error,
   Brand,
   Video,
+  Loader,
+  Error,
 };

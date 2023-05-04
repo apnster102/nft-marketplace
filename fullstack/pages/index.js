@@ -5,7 +5,7 @@ import Style from "../styles/index.module.css";
 import {
   HeroSection,
   Service,
-  BigNFTSlider,
+  BigNFTSilder,
   Subscribe,
   Title,
   Category,
@@ -15,14 +15,13 @@ import {
   AudioLive,
   FollowerTab,
   Slider,
-  Video,
   Brand,
-  
-  //Loader,
+  Video,
+  Loader,
 } from "../components/componentsindex";
 import { getTopCreators } from "../TopCreators/TopCreators";
 
-//IMPORTING CONTRACT DATA
+//IMPORTING CONTRCT DATA
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
 
 const Home = () => {
@@ -38,36 +37,36 @@ const Home = () => {
   const [nftsCopy, setNftsCopy] = useState([]);
 
   useEffect(() => {
-    if (currentAccount) {
-      fetchNFTs().then((items) => {
-        console.log(nfts);
-        console.log(items);
-        setNfts(items.reverse());
-        setNftsCopy(items);
-      });
-    }
+    // if (currentAccount) {
+    fetchNFTs().then((items) => {
+      console.log(nfts);
+      console.log(items);
+      setNfts(items.reverse());
+      setNftsCopy(items);
+    });
+    // }
   }, []);
 
   //CREATOR LIST
 
   const creators = getTopCreators(nfts);
-  console.log(creators);
+  // console.log(creators);
 
   return (
     <div className={Style.homePage}>
       <HeroSection />
       <Service />
-      <BigNFTSlider />
+      <BigNFTSilder />
       <Title
         heading="Audio Collection"
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <AudioLive />
-      {/* {creators.length == 0 ? (
+      {creators.length == 0 ? (
         <Loader />
       ) : (
         <FollowerTab TopCreator={creators} />
-      )} */}
+      )}
 
       <Slider />
       <Collection />
@@ -76,7 +75,7 @@ const Home = () => {
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <Filter />
-      {/* {nfts.length == 0 ? <Loader /> : <NFTCard NFTData={nfts} />} */}
+      {nfts.length == 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
 
       <Title
         heading="Browse by category"
@@ -84,8 +83,8 @@ const Home = () => {
       />
       <Category />
       <Subscribe />
-      <Video />
       <Brand />
+      <Video />
     </div>
   );
 };

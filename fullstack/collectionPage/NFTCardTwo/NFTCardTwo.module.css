@@ -1,11 +1,11 @@
 .NFTCardTwo{
     width: 80%;
-    margin: 0 auto;
+    margin:  0 auto;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 14rem;
 }
 
 .NFTCardTwo_box{
@@ -48,7 +48,7 @@
     padding: 0 .5rem;
 }
 
-.NFTCardTwo_box_image{
+.NFTCardTwo_box_img{
     grid-column: 1 / -1;
     grid-row: 1 / -1;
 }
@@ -74,7 +74,7 @@
 .NFTCardTwo_box_info_left p{
     font-size: 2rem;
     font-weight: 900;
-}
+} 
 
 .NFTCardTwo_box_price{
     display: flex;
@@ -85,7 +85,7 @@
 }
 
 .NFTCardTwo_box_price_box p{
-    border: 1px solid var(--icons-color);
+    border:  1px solid var(--icons-color);
     padding: 1.5rem 1rem 1rem 1rem;
     font-size: 1.4rem;
     margin-top: .5rem;

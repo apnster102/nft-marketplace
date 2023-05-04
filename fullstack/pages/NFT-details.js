@@ -1,20 +1,18 @@
-import React, {useEffect, useState, useContext} from 'react'
-import { useRouter } from 'next/router';
+import React, { useEffect, useState, useContext } from "react";
+import { useRouter } from "next/router";
 
 //INTERNAL IMPORT
-import {Button, Category, Brand} from "../components/componentsindex";
+import { Button, Category, Brand } from "../components/componentsindex";
 import NFTDetailsPage from "../NFTDetailsPage/NFTDetailsPage";
 
 //IMPORT SMART CONTRACT DATA
-import { NFTMarketplaceContext } from '../Context/NFTMarketplaceContext';
-
+import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
 const NFTDetails = () => {
-
   const { currentAccount } = useContext(NFTMarketplaceContext);
 
-  const [nft, setNft] = useState ({
+  const [nft, setNft] = useState({
     image: "",
-    tokenID: "",
+    tokenId: "",
     name: "",
     owner: "",
     price: "",
@@ -23,17 +21,17 @@ const NFTDetails = () => {
 
   const router = useRouter();
   useEffect(() => {
-    if(!router.isReady) return;
+    if (!router.isReady) return;
     setNft(router.query);
   }, [router.isReady]);
 
   return (
     <div>
-        <NFTDetailsPage nft={nft} />
-        <Category />
-        <Brand />
+      <NFTDetailsPage nft={nft} />
+      <Category />
+      <Brand />
     </div>
-  )
-}
+  );
+};
 
-export default NFTDetails
+export default NFTDetails;

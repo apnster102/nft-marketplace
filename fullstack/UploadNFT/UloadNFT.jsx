@@ -7,13 +7,13 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 //INTERNAL IMPORT
-import Style from "./UploadNFT.module.css";
-import formStyle from "../components/AccountPage/Form/Form.module.css";
+import Style from "./Upload.module.css";
+import formStyle from "../AccountPage/Form/Form.module.css";
 import images from "../img";
 import { Button } from "../components/componentsindex.js";
 import { DropZone } from "../UploadNFT/uploadNFTIndex.js";
 
-const UploadNFT = ({ uploadToIPFS, createNFT }) => {
+const UloadNFT = ({ uploadToIPFS, createNFT }) => {
   const [price, setPrice] = useState("");
   const [active, setActive] = useState(0);
   const [name, setName] = useState("");
@@ -27,7 +27,7 @@ const UploadNFT = ({ uploadToIPFS, createNFT }) => {
 
   const router = useRouter();
 
-  const categoryArray = [
+  const categoryArry = [
     {
       image: images.nft_image_1,
       category: "Sports",
@@ -76,7 +76,7 @@ const UploadNFT = ({ uploadToIPFS, createNFT }) => {
           <label htmlFor="nft">Item Name</label>
           <input
             type="text"
-            placeholder="Shiba"
+            placeholder="shoaib bhai"
             className={formStyle.Form_box_input_userName}
             onChange={(e) => setName(e.target.value)}
           />
@@ -97,7 +97,7 @@ const UploadNFT = ({ uploadToIPFS, createNFT }) => {
           </div>
 
           <p className={Style.upload_box_input_para}>
-            We will include a link to this URL on this item's detail page,
+            Ciscrypt will include a link to this URL on this item's detail page,
             so that users can click to learn more about it. You are welcome to
             link to your own webpage with more details.
           </p>
@@ -110,7 +110,7 @@ const UploadNFT = ({ uploadToIPFS, createNFT }) => {
             id=""
             cols="30"
             rows="6"
-            placeholder="something about your work in a few words"
+            placeholder="something about yourself in few words"
             onChange={(e) => setDescription(e.target.value)}
           ></textarea>
           <p>
@@ -126,7 +126,7 @@ const UploadNFT = ({ uploadToIPFS, createNFT }) => {
           </p>
 
           <div className={Style.upload_box_slider_div}>
-            {categoryArray.map((el, i) => (
+            {categoryArry.map((el, i) => (
               <div
                 className={`${Style.upload_box_slider} ${
                   active == i + 1 ? Style.active : ""
@@ -182,14 +182,14 @@ const UploadNFT = ({ uploadToIPFS, createNFT }) => {
             </div>
           </div>
           <div className={formStyle.Form_box_input}>
-            <label htmlFor="Properties">Properties</label>
+            <label htmlFor="Propertie">Propertie</label>
             <div className={formStyle.Form_box_input_box}>
               <div className={formStyle.Form_box_input_box_icon}>
                 <AiTwotonePropertySafety />
               </div>
               <input
                 type="text"
-                placeholder="Properties"
+                placeholder="Propertie"
                 onChange={(e) => setProperties(e.target.value)}
               />
             </div>
@@ -240,4 +240,4 @@ const UploadNFT = ({ uploadToIPFS, createNFT }) => {
   );
 };
 
-export default UploadNFT;
+export default UloadNFT;

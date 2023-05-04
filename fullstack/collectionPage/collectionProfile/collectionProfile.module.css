@@ -1,3 +1,5 @@
+
+
 .collectionProfile{
     width: 100%;
     margin-top: 5rem;
@@ -18,7 +20,7 @@
     padding: 1rem 2rem;
 }
 
-.collectionProfile_box_left_image{
+.collectionProfile_box_left_img{
     border-radius: 1rem;
 }
 
@@ -43,7 +45,7 @@
 
 .collectionProfile_box_left_social a:hover{
     background-color: var(--main-bg-color);
-    columns: var(--icons-color);
+    color: var(--icons-color);
     box-shadow: var(--box-shadow);
 }
 
@@ -90,8 +92,9 @@
 }
 
 .collectionProfile_box_middle_box_item span{
-    color: var(--icons-color);
+    color: var(--icons-color)
 }
+
 
 @media screen and (max-width: 35em) {
     .collectionProfile_box{
@@ -131,7 +134,7 @@
     }
 }
 
-@media screen and (min-device-width:768px) and (max-devide-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .collectionProfile_box{
         width: 90%;
         grid-template-columns: 1fr;

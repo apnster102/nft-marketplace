@@ -7,7 +7,7 @@ import Style from "./HelpCenter.module.css";
 const HelpCenter = () => {
   const helpCenter = [
     {
-      name: "About Us",
+      name: "About",
       link: "aboutus",
     },
     {
@@ -19,7 +19,7 @@ const HelpCenter = () => {
       link: "signUp",
     },
     {
-      name: "Log In",
+      name: "LogIn",
       link: "login",
     },
     {
@@ -31,7 +31,7 @@ const HelpCenter = () => {
     <div className={Style.box}>
       {helpCenter.map((el, i) => (
         <div className={Style.helpCenter} key={i + 1}>
-          <a href={`/${el.link}`}>{el.name}</a>
+          <Link href={{ pathname: `${el.link}` }}>{el.name}</Link>
         </div>
       ))}
     </div>

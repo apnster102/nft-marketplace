@@ -7,8 +7,10 @@ import {
   TiSocialInstagram,
 } from "react-icons/ti";
 import { HiOutlineMail } from "react-icons/hi";
+
+//INTERNAL IMPORT
 import Style from "../styles/contactus.module.css";
-import formStyle from "../components/AccountPage/Form/Form.module.css";
+import formStyle from "../AccountPage/Form/Form.module.css";
 import { Button } from "../components/componentsindex";
 
 const contactus = () => {
@@ -19,22 +21,22 @@ const contactus = () => {
         <div className={Style.contactus_box_box}>
           <div className={Style.contactus_box_box_left}>
             <div className={Style.contactus_box_box_left_item}>
-              <h3>ADDRESS</h3>
+              <h3>🗺 ADDRESS</h3>
               <p>
-                G2, University of Engineering and Technology, 144 Xuan Thuy, Cau
-                Giay, HN
+                Photo booth tattooed prism, portland taiyaki hoodie neutra
+                typewriter
               </p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
-              <h3>EMAIL</h3>
-              <p>studentID@vnu.edu.vn</p>
+              <h3>💌 EMAIL</h3>
+              <p>nc.example@example.com</p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
-              <h3>PHONE</h3>
-              <p>085-123-9999</p>
+              <h3>☎ PHONE</h3>
+              <p>000-123-456-7890</p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
-              <h3>SOCIALS</h3>
+              <h3>🌏 SOCIALS</h3>
               <a href="#">
                 <TiSocialFacebook />
               </a>
@@ -58,7 +60,7 @@ const contactus = () => {
                 <label htmlFor="name">Full Name</label>
                 <input
                   type="text"
-                  placeholder="Enter your full name"
+                  placeholder="shoaib bhai"
                   className={formStyle.Form_box_input_userName}
                 />
               </div>
@@ -78,7 +80,7 @@ const contactus = () => {
                   id=""
                   cols="30"
                   rows="6"
-                  placeholder="Please share something about yourself in few words"
+                  placeholder="something about yourself in few words"
                 ></textarea>
               </div>
               <Button

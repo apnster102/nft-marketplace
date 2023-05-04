@@ -10,7 +10,7 @@ const Category = () => {
   const CategoryArray = [
     {
       images: images.creatorbackground1,
-      name: "Doggy",
+      name: "Dance Monkey",
     },
     {
       images: images.creatorbackground2,
@@ -18,15 +18,15 @@ const Category = () => {
     },
     {
       images: images.creatorbackground3,
-      name: "Crochet",
+      name: "Entirtment Art",
     },
     {
       images: images.creatorbackground4,
-      name: "Life",
+      name: "Time Life",
     },
     {
       images: images.creatorbackground5,
-      name: "Animals",
+      name: "Animals Art",
     },
     {
       images: images.creatorbackground6,
@@ -38,15 +38,19 @@ const Category = () => {
     },
     {
       images: images.creatorbackground8,
-      name: "Hehe",
+      name: "Hubby",
+    },
+    {
+      images: images.creatorbackground8,
+      name: "Bad Arts",
     },
     {
       images: images.creatorbackground9,
-      name: "Yarn",
+      name: " Arts",
     },
     {
       images: images.creatorbackground10,
-      name: "My Favorites",
+      name: "My Fav",
     },
   ];
   return (
@@ -69,7 +73,7 @@ const Category = () => {
               </span>
               <div className={Style.category_box_title_info}>
                 <h4>{el.name}</h4>
-                <small>{i + 1}002 NFTS</small>
+                <small>{i + 1}995 NFTS</small>
               </div>
             </div>
           </div>

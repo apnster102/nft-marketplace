@@ -1,16 +1,13 @@
-import React, { startTransition } from "react";
+import React from "react";
 import Image from "next/image";
-
 import {
   TiSocialFacebook,
   TiSocialLinkedin,
   TiSocialTwitter,
-  TiSocialYoutube,
   TiSocialInstagram,
-  TiArrowSortedDown,
-  TiArrowSortedUp,
 } from "react-icons/ti";
 
+//INTERNAL IMPORT
 import Style from "./collectionProfile.module.css";
 import images from "../../img";
 
@@ -29,24 +26,28 @@ const collectionProfile = () => {
           />
 
           <div className={Style.collectionProfile_box_left_social}>
-            <a href="https://www.facebook.com/" target="_blank">
+            <a href="#">
               <TiSocialFacebook />
             </a>
-            <a href="https://www.instagram.com/?hl=en" target="_blank">
+            <a href="#">
               <TiSocialInstagram />
             </a>
-            <a href="https://www.linkedin.com/" target="_blank">
+            <a href="#">
               <TiSocialLinkedin />
             </a>
-            <a href="https://www.youtube.com/" target="_blank">
-              <TiSocialYoutube />
+            <a href="#">
+              <TiSocialTwitter />
             </a>
           </div>
         </div>
 
         <div className={Style.collectionProfile_box_middle}>
-          <h1>Awesowm NFTs Colletion</h1>
-          <p>insert</p>
+          <h1>Awesome NFTs Collection</h1>
+          <p>
+            Karafuru is home to 5,555 generative arts where colors reign
+            supreme. Leave the drab reality and enter the world of Karafuru by
+            Museum of Toys.
+          </p>
 
           <div className={Style.collectionProfile_box_middle_box}>
             {cardArray.map((el, i) => (
@@ -55,8 +56,8 @@ const collectionProfile = () => {
                 key={i + 1}
               >
                 <small>Floor price</small>
-                <p>${i + 1}92,256</p>
-                <span>+{i + 2}.11%</span>
+                <p>${i + 1}95,4683</p>
+                <span>+ {i + 2}.11%</span>
               </div>
             ))}
           </div>

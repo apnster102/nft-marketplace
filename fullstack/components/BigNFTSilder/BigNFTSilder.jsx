@@ -5,12 +5,12 @@ import { MdVerified, MdTimer } from "react-icons/md";
 import { TbArrowBigLeftLines, TbArrowBigRightLine } from "react-icons/tb";
 
 //INTERNAL IMPORT
-import Style from "./BigNFTSlider.module.css";
+import Style from "./BigNFTSilder.module.css";
 import images from "../../img";
 import Button from "../Button/Button";
 
-const BigNFTSlider = () => {
-  const [idNumber, setIdNumber] = useState(1);
+const BigNFTSilder = () => {
+  const [idNumber, setIdNumber] = useState(0);
 
   const sliderData = [
     {
@@ -20,7 +20,7 @@ const BigNFTSlider = () => {
       collection: "GYM",
       price: "00664 ETH",
       like: 243,
-      image: images.user1,
+      image: images.user5,
       nftImage: images.nft_image_1,
       time: {
         days: 21,
@@ -52,7 +52,7 @@ const BigNFTSlider = () => {
       collection: "Buddies",
       price: "0000064 ETH",
       like: 243,
-      image: images.user3,
+      image: images.user1,
       nftImage: images.nft_image_2,
       time: {
         days: 37,
@@ -140,6 +140,13 @@ const BigNFTSlider = () => {
               </p>
             </div>
 
+            <p className={Style.bigNFTSlider_box_left_bidding_box_auction}>
+              <MdTimer
+                className={Style.bigNFTSlider_box_left_bidding_box_icon}
+              />
+              <span>Auction ending in</span>
+            </p>
+
             <div className={Style.bigNFTSlider_box_left_bidding_box_timer}>
               <div
                 className={Style.bigNFTSlider_box_left_bidding_box_timer_item}
@@ -207,4 +214,4 @@ const BigNFTSlider = () => {
   );
 };
 
-export default BigNFTSlider;
+export default BigNFTSilder;

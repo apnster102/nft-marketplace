@@ -18,11 +18,11 @@ const NFTTabs = ({ dataTab, icon }) => {
           />
           <div className={Style.NFTTabs_box_info}>
             <span>
-              Offer of $770 by <span>Apnster</span>
+              Offer by $770 by <span>Shoaib Bhai</span>
               {icon}
             </span>
 
-            <small>April 20 - 3:00 PM</small>
+            <small>Jun 14 - 4:12 PM</small>
           </div>
         </div>
       ))}

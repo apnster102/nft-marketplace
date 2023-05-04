@@ -52,12 +52,11 @@
 }
 
 .bigNFTSlider_box_left_creator_profile_info{
-    line-height: 1;
-    font-size: medium;
+    line-height: 0;
 }
 
 .bigNFTSlider_box_left_creator_profile_info p{
-    margin-bottom: -1rem;
+    margin-bottom: -.7rem;
     margin-top: 1rem;
 }
 
@@ -119,7 +118,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 4rem;
     padding-block: 2rem 0rem;
 }
 

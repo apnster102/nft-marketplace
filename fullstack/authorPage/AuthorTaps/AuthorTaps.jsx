@@ -2,24 +2,26 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { TiArrowSortedDown, TiArrowSortedUp, TiTick } from "react-icons/ti";
 
+//INTERNAL IMPORT
 import Style from "./AuthorTaps.module.css";
 
 const AuthorTaps = ({
-  setCollectibles,
+  setCollectiables,
   setCreated,
   setLike,
   setFollower,
   setFollowing,
+  currentAccount,
 }) => {
   const [openList, setOpenList] = useState(false);
   const [activeBtn, setActiveBtn] = useState(1);
   const [selectedMenu, setSelectedMenu] = useState("Most Recent");
 
   const listArray = [
-    "Created by admin",
+    "Created By Admin",
     "Most Liked",
     "Most Discussed",
-    "Most View",
+    "Most Viewed",
   ];
 
   const openDropDownList = () => {
@@ -32,39 +34,37 @@ const AuthorTaps = ({
 
   const openTab = (e) => {
     const btnText = e.target.innerText;
-
     console.log(btnText);
-
-    if (btnText == "Collectibles") {
-      setCollectibles(true);
+    if (btnText == "Listed NFTs") {
+      setCollectiables(true);
       setCreated(false);
       setFollower(false);
       setFollowing(false);
       setLike(false);
       setActiveBtn(1);
-    } else if (btnText == "Created") {
-      setCollectibles(false);
+    } else if (btnText == "Owned NFT") {
+      setCollectiables(false);
       setCreated(true);
       setFollower(false);
       setFollowing(false);
       setLike(false);
       setActiveBtn(2);
     } else if (btnText == "Liked") {
-      setCollectibles(false);
+      setCollectiables(false);
       setCreated(false);
       setFollower(false);
       setFollowing(false);
       setLike(true);
       setActiveBtn(3);
     } else if (btnText == "Following") {
-      setCollectibles(false);
+      setCollectiables(false);
       setCreated(false);
       setFollower(false);
       setFollowing(true);
       setLike(false);
       setActiveBtn(4);
     } else if (btnText == "Followers") {
-      setCollectibles(false);
+      setCollectiables(false);
       setCreated(false);
       setFollower(true);
       setFollowing(false);
@@ -82,34 +82,35 @@ const AuthorTaps = ({
               className={`${activeBtn == 1 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
-              Collectibles{""}
+              Listed NFTs
             </button>
             <button
               className={`${activeBtn == 2 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
-              Created{""}
+              Owned NFT
             </button>
             <button
               className={`${activeBtn == 3 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
-              Liked{""}
+              Liked
             </button>
             <button
               className={`${activeBtn == 4 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
-              Following{""}
+              Following
             </button>
             <button
               className={`${activeBtn == 5 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
-              Followers{""}
+              Followers
             </button>
           </div>
         </div>
+
         <div className={Style.AuthorTaps_box_right}>
           <div
             className={Style.AuthorTaps_box_right_para}

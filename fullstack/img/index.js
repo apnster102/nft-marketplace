@@ -10,7 +10,7 @@ import creatorbackground8 from "./creatorbackground-8.jpg";
 import creatorbackground9 from "./creatorbackground-9.jpg";
 import creatorbackground10 from "./creatorbackground-10.jpg";
 import creatorbackground11 from "./creatorbackground-11.jpg";
-import user1 from "./user-1.png";
+import user1 from "./user1.jpg";
 import user2 from "./user-2.png";
 import user3 from "./user-3.png";
 import user4 from "./user-4.png";
@@ -52,16 +52,19 @@ import provider4 from "./provider-4.png";
 import founder1 from "./founder1.jpg";
 import founder2 from "./founder2.jpg";
 import founder3 from "./founder3.jpg";
+import founder4 from "./founder4.jpg";
 import loader from "./loadergif.gif";
 import errorgif from "./error.gif";
 import transfer from "./transfer.gif";
 import transferEther from "./ethereTransfer.gif";
+import google from "./google.svg";
 
 export default {
   hero2,
   founder1,
   founder2,
   founder3,
+  founder4,
   provider1,
   provider2,
   provider3,
@@ -116,4 +119,5 @@ export default {
   errorgif,
   transfer,
   transferEther,
+  google,
 };
