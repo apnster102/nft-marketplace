@@ -19,7 +19,7 @@ const NFTCardTwo = ({ NFTData }) => {
         }
         else {
             setLike(false);
-            setLikeInc(23 + 1);
+            setLikeInc(23);
         }
     }
 

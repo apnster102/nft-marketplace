@@ -179,8 +179,8 @@ export const NFTMarketplaceProvider = ({ children }) => {
           });
 
       await transaction.wait();
-      router.push("/searchPage");
-      console.log(transaction);
+      // router.push("/searchPage");
+      // console.log('transaction', transaction);
     } catch (error) {
       setError("error while creating sale");
       setOpenError(true);
@@ -199,16 +199,13 @@ export const NFTMarketplaceProvider = ({ children }) => {
         // );
         const provider = new ethers.providers.JsonRpcProvider();
         const contract = fetchContract(provider);
-
         const data = await contract.fetchMarketItem();
         console.log('data', data);
         const items = await Promise.all(
           data.map(
             async ({ tokenID, seller, owner, price: unformattedPrice }) => {
-              console.log('Retrieving tokenURI for tokenID:', tokenID);
+              // console.log('Retrieving tokenURI for tokenID:', tokenID);
               // console.log('contract:', contract);
-              // const metadata = await contract.tokenMetadata(tokenID);
-              // console.log('metadata', metadata);
               const tokenURI = await contract.tokenURI(tokenID);
               // console.log('tokenURI', tokenURI, 'nothing');
 
@@ -246,14 +243,13 @@ export const NFTMarketplaceProvider = ({ children }) => {
     } catch (error) {
       console.log("Error while fetching NFTS", error);
       setError("Error while fetching NFTS");
-      setOpenError(true);
-      
+      setOpenError(true);    
     }
   };
 
-  // useEffect(() => {
-  //   fetchNFTs();
-  // }, []);
+  useEffect(() => {
+    fetchNFTs();
+  }, []);
 
   //--FETCHING MY NFT OR LISTED NFTs
   const fetchMyNFTsOrListedNFTs = async (type) => {
@@ -265,7 +261,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
           type == "fetchItemsListed"
             ? await contract.fetchItemsListed()
             : await contract.fetchMyNFT();
-
+        console.log(type, data);
         const items = await Promise.all(
           data.map(
             async ({ tokenID, seller, owner, price: unformattedPrice }) => {

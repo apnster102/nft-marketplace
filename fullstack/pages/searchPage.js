@@ -15,16 +15,13 @@ const searchPage = () => {
   const [nfts, setNfts] = useState([]);
   const [nftsCopy, setNftsCopy] = useState([]);
   
-  // useEffect(() => {
-  //   console.log(nfts);
-  // })
   useEffect(() => {
     try {
       fetchNFTs().then((items) => {
-        // setNfts(items.reverse());
         setNfts(items);
-        console.log(nfts);
+        setNftsCopy(items);    
       });
+      console.log('nft', nfts);
     } catch (error) {
       setError("Please reload the browser", error);
     }
