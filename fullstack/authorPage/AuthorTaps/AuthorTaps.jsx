@@ -42,7 +42,7 @@ const AuthorTaps = ({
       setFollowing(false);
       setLike(false);
       setActiveBtn(1);
-    } else if (btnText == "Owned NFT") {
+    } else if (btnText == "Purchased NFT") {
       setCollectiables(false);
       setCreated(true);
       setFollower(false);
@@ -88,7 +88,7 @@ const AuthorTaps = ({
               className={`${activeBtn == 2 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
-              Owned NFT
+              Purchased NFT
             </button>
             <button
               className={`${activeBtn == 3 ? Style.active : ""}`}

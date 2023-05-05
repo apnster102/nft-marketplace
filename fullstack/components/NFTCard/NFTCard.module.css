@@ -76,8 +76,14 @@
     background-color: var(--shadow-light-color);
 }
 
+.NFTCard_box_update_right_info small{
+    font-size: 0.6rem;
+    font-weight: 800;
+}
+
+
 .NFTCard_box_update_right_info p{
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     font-weight: 800;
 }
 

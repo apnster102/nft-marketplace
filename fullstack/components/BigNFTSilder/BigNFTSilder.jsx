@@ -48,7 +48,7 @@ const BigNFTSilder = () => {
     {
       title: "Buddy NFT",
       id: 3,
-      name: "Nguyen Dang Minh Phuong",
+      name: "Phuong",
       collection: "Buddies",
       price: "0000064 ETH",
       like: 243,

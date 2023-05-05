@@ -17,6 +17,10 @@
     box-shadow: var(--box-shadow);
 }
 
+.audioPlayer_box_info h4 {
+    font-size: 0.9rem;
+}
+
 .audioPlayer_box_info_box{
     display: flex;
     gap: 1rem;
@@ -28,9 +32,9 @@
 
 .audioPlayer_box_info_box_price{
     border:  1px solid var(--icons-color);
-    font-size: .8rem;
+    font-size: .6rem;
     width: 40%;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: .2rem;
 }
 

@@ -85,7 +85,7 @@ const NFTDescription = ({ nft }) => {
       setHistory(true);
       setProvanance(false);
       setOwner(false);
-    } else if (btnText == "Provanance") {
+    } else if (btnText == "Provenance") {
       setHistory(false);
       setProvanance(true);
       setOwner(false);

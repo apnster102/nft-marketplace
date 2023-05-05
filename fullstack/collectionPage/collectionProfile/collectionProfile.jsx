@@ -12,7 +12,7 @@ import Style from "./collectionProfile.module.css";
 import images from "../../img";
 
 const collectionProfile = () => {
-  const cardArray = [1, 2, 3, 4];
+  const cardArray = [1, 2, 3];
   return (
     <div className={Style.collectionProfile}>
       <div className={Style.collectionProfile_box}>
